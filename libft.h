@@ -6,7 +6,7 @@
 /*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 11:23:47 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/01 13:45:17 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/01 15:10:05 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,16 @@ size_t	ft_strlen(const char *s);
 int	ft_toupper(int c);
 //TODO:TEST ->  tolower
 int	ft_tolower(int c);
-//TODO: strchr
+//TODO:TEST -> strchr
 char	*strchr(const char *s, int c);
-//TODO: strrchr
+//TODO:TEST ->  strrchr
 char	*strrchr(const char *s, int c);
-//TODO: strncmp
-
+//TODO:TEST ->  strncmp
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 //TODO: strnstr
-
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 //TODO: atoi
-
+int		ft_atoi(const char *str);
 //TODO: calloc
 
 //TODO: strdup
