@@ -6,7 +6,7 @@
 /*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 11:23:47 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/02 13:38:30 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/02 14:30:53 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,58 +15,31 @@
 
 # include <stdlib.h>
 
-//TODO: TEST -> isalpha 
-int	ft_isalpha(int c);
-//TODO:	TEST -> isdigit
-int ft_isdigit(int c);
-//TODO: TEST -> isalnum
-int ft_isalnum(int c);
-//TODO: TEST -> isascii checks if 0 >= c <= 127
-int	ft_isascii(int c);
-//TODO: iTEST ->isprint checks if 32 >= c < 127
-int ft_isprint(int c);
-//TODO: TEST - > strlen
-size_t	ft_strlen(const char *s);
-
-//TODO:TEST -> toupper 
-int	ft_toupper(int c);
-//TODO:TEST ->  tolower
-int	ft_tolower(int c);
-//TODO:TEST -> strchr
-char	*strchr(const char *s, int c);
-//TODO:TEST ->  strrchr
-char	*strrchr(const char *s, int c);
-//TODO:TEST ->  strncmp
-int		ft_strncmp(const char *s1, const char *s2, size_t n);
-//TODO:TEST -> strnstr
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-//TODO:TEST -> atoi
-int		ft_atoi(const char *str);
-//TODO:TEST -> memset The memset() function writes len bytes of value c (converted to an unsigned char) to the string b and return string b.
-void	*ft_memset(void *b, int c, size_t len);
-//TODO:TEST -> bzero The bzero() function writes n zeroed bytes to the string s.  If n is zero, bzero() does nothing.
-void	ft_bzero(void *s, size_t n);
-//TODO:TEST -> calloc
-void	*ft_calloc(size_t count, size_t size);
-//TODO:TEST -> strdup
-char	*ft_strdup(const char *s1);
-
-//TODO: TEST -> memcpy The memcpy() function copies n bytes from memory area src to memory area dst.  If dst and src overlap, behavior is undefined.  Applications in which dst and src  might overlap should use memmove(3) instead.
-void	*ft_memcpy(void *dst, const void *src, size_t n);
-//TODO:TEST -> memmove
-void	*ft_memmove(void *dst, const void *src, size_t len);
-//TODO:TEST -> strlcpy
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
-//TODO:TEST -> strlcat
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
-
-
-//TODO: memchr
-
-//TODO: memcmp
+int		ft_isalpha(int c);												//TODO:TEST
+int 	ft_isdigit(int c);												//TODO:TEST
+int 	ft_isalnum(int c);												//TODO:TEST
+int		ft_isascii(int c);												//TODO:TEST
+int 	ft_isprint(int c);												//TODO:TEST
+size_t	ft_strlen(const char *s);									//TODO:TEST
+int		ft_toupper(int c);												//TODO:TEST
+int		ft_tolower(int c);												//TODO:TEST
+char	*strchr(const char *s, int c);								//TODO:TEST
+char	*strrchr(const char *s, int c);								//TODO:TEST
+int		ft_strncmp(const char *s1, const char *s2, size_t n);		//TODO:TEST
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);//TODO:TEST
+int		ft_atoi(const char *str);									//TODO:TEST
+void	*ft_memset(void *b, int c, size_t len);						//TODO:TEST
+void	ft_bzero(void *s, size_t n);								//TODO:TEST
+void	*ft_calloc(size_t count, size_t size);						//TODO:TEST
+char	*ft_strdup(const char *s1);									//TODO:TEST
+void	*ft_memcpy(void *dst, const void *src, size_t n);			//TODO:TEST
+void	*ft_memmove(void *dst, const void *src, size_t len);		//TODO :TEST
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize); 	//TODO :TEST
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize); 	//TODO :TEST
+void	*ft_memchr(const void *s, int c, size_t n); 				//TODO: TEST
+int		ft_memcmp(const void *s1, const void *s2, size_t n); 		//TODO: TEST
 
 // ----------------PART 2
-
 //TODO: ft_substr
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 //TODO: ft_strjoin

@@ -6,7 +6,7 @@
 /*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 15:45:25 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/01 15:51:09 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/02 14:17:28 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ void	*ft_memset(void *b, int c, size_t len)
 
 	while (len-- > 0)
 		*dst++ = val;
-	return (dst);
+	return (b);
 }
