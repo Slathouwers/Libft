@@ -6,12 +6,14 @@
 /*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 11:23:47 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/01 15:10:05 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/01 16:55:23 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# include <stdlib.h>
 
 //TODO: TEST -> isalpha 
 int	ft_isalpha(int c);
@@ -36,19 +38,21 @@ char	*strchr(const char *s, int c);
 char	*strrchr(const char *s, int c);
 //TODO:TEST ->  strncmp
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-//TODO: strnstr
+//TODO:TEST -> strnstr
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-//TODO: atoi
+//TODO:TEST -> atoi
 int		ft_atoi(const char *str);
-//TODO: calloc
 
-//TODO: strdup
-
-
-//TODO: memset The memset() function writes len bytes of value c (converted to an unsigned char) to the string b and return string b.
+//TODO:TEST -> memset The memset() function writes len bytes of value c (converted to an unsigned char) to the string b and return string b.
 void	*ft_memset(void *b, int c, size_t len);
-//TODO: bzero The bzero() function writes n zeroed bytes to the string s.  If n is zero, bzero() does nothing.
+//TODO:TEST -> bzero The bzero() function writes n zeroed bytes to the string s.  If n is zero, bzero() does nothing.
 void	ft_bzero(void *s, size_t n);
+//TODO:TEST -> calloc
+void	*ft_calloc(size_t count, size_t size);
+//TODO:TEST -> strdup
+
+
+
 //TODO: memcpy The memcpy() function copies n bytes from memory area src to memory area dst.  If dst and src overlap, behavior is undefined.  Applications in which dst and src  might overlap should use memmove(3) instead.
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 //TODO: memmove
