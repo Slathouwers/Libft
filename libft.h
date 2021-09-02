@@ -6,7 +6,7 @@
 /*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 11:23:47 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/02 11:26:17 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/02 11:59:36 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,10 @@ char	*ft_strdup(const char *s1);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 //TODO:TEST -> memmove
 void	*ft_memmove(void *dst, const void *src, size_t len);
-//TODO: strlcpy
+//TODO:TEST -> strlcpy
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
-//TODO: strlcat
+//TODO:TEST -> strlcat
+
 
 
 //TODO: memchr
