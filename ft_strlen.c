@@ -6,7 +6,7 @@
 /*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 13:01:24 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/01 13:09:21 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/02 14:43:20 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ size_t	ft_strlen(const char *s)
 	len = 0;
 	while(*s++)
 		len++;
-	return (len)
+	return (len);
 }

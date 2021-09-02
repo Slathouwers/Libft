@@ -6,11 +6,11 @@
 /*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 12:56:14 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/01 12:58:13 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/02 14:43:41 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.c"
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

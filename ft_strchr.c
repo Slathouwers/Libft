@@ -6,7 +6,7 @@
 /*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 13:30:08 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/02 10:56:17 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/02 14:46:26 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ char	*ft_strchr(const char *s, int c)
 			return (NULL);
 		s++;
 	}
-	return (s);
+	return ((char *) (s));
 }

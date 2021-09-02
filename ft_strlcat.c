@@ -6,7 +6,7 @@
 /*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/02 12:03:12 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/02 13:30:36 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/02 14:55:38 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ size_t ft_strlcat (char *dst, const char *src, size_t dstsize)
 	}
 	while (*src && n_bytes > 1)
 	{
-		*dst++ = src++;
+		*dst++ = *src++;
 		n_bytes--;
 	}
 	*dst = '\0';
-	if (size > dst_len)
+	if (dstsize > dlen)
 		return (dlen + slen);
-	return (size +slen);
+	return (dstsize + slen);
 }

@@ -6,7 +6,7 @@
 /*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 11:23:47 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/02 14:30:53 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/02 14:51:53 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ int 	ft_isprint(int c);												//TODO:TEST
 size_t	ft_strlen(const char *s);									//TODO:TEST
 int		ft_toupper(int c);												//TODO:TEST
 int		ft_tolower(int c);												//TODO:TEST
-char	*strchr(const char *s, int c);								//TODO:TEST
-char	*strrchr(const char *s, int c);								//TODO:TEST
+char	*ft_strchr(const char *s, int c);								//TODO:TEST
+char	*ft_strrchr(const char *s, int c);								//TODO:TEST
 int		ft_strncmp(const char *s1, const char *s2, size_t n);		//TODO:TEST
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);//TODO:TEST
 int		ft_atoi(const char *str);									//TODO:TEST
