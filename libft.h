@@ -6,7 +6,7 @@
 /*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 11:23:47 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/01 16:55:23 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/02 11:26:17 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 //TODO:TEST -> atoi
 int		ft_atoi(const char *str);
-
 //TODO:TEST -> memset The memset() function writes len bytes of value c (converted to an unsigned char) to the string b and return string b.
 void	*ft_memset(void *b, int c, size_t len);
 //TODO:TEST -> bzero The bzero() function writes n zeroed bytes to the string s.  If n is zero, bzero() does nothing.
@@ -50,12 +49,11 @@ void	ft_bzero(void *s, size_t n);
 //TODO:TEST -> calloc
 void	*ft_calloc(size_t count, size_t size);
 //TODO:TEST -> strdup
+char	*ft_strdup(const char *s1);
 
-
-
-//TODO: memcpy The memcpy() function copies n bytes from memory area src to memory area dst.  If dst and src overlap, behavior is undefined.  Applications in which dst and src  might overlap should use memmove(3) instead.
+//TODO: TEST -> memcpy The memcpy() function copies n bytes from memory area src to memory area dst.  If dst and src overlap, behavior is undefined.  Applications in which dst and src  might overlap should use memmove(3) instead.
 void	*ft_memcpy(void *dst, const void *src, size_t n);
-//TODO: memmove
+//TODO:TEST -> memmove
 void	*ft_memmove(void *dst, const void *src, size_t len);
 //TODO: strlcpy
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
