@@ -6,7 +6,7 @@
 #    By: slathouw <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/02 11:59:30 by slathouw          #+#    #+#              #
-#    Updated: 2021/09/02 11:59:32 by slathouw         ###   ########.fr        #
+#    Updated: 2021/09/02 13:38:37 by slathouw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRCS 	= ft_isalnum.c, ft_isprint.c, ft_strlen.c, ft_tolower.c, ft_atoi.c \
 		  ft_isalpha.c, ft_memset.c, ft_strncmp.c, ft_toupper.c, ft_bzero.c	\
 		  ft_isascii.c, ft_strchr.c, ft_strnstr.c, ft_calloc.c, ft_isdigit.c \
 	  	  ft_strdup.c, ft_strrchr.c, ft_memcpy.c, ft_memmove.c, ft_strlcpy.c \
-
+		  ft_strlcat.c, 
 OBJS	= ${SRCS:.c=.o}
 CC		= gcc
 CFLAGS	= -Wall -Wextra -Werror
