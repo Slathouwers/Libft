@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: slathouw <slathouw@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/02 13:40:15 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/02 16:03:44 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/06 15:55:14 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	chr = (unsigned char) c;
 	while (n-- > 0)
 		if (*ptr++ == chr)
-			return ((void *) (ptr - 1));
+			return ((void *)(ptr - 1));
 	return (NULL);
 }

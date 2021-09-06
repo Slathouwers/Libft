@@ -6,7 +6,7 @@
 /*   By: slathouw <slathouw@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/05 11:02:43 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/06 13:31:31 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/06 15:54:54 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list	*ft_lstnew(void *content)
 	t_list	*elm;
 
 	elm = (t_list *) malloc(sizeof(t_list));
-	if(!elm)
+	if (!elm)
 		return (NULL);
 	elm->content = content;
 	elm->next = NULL;

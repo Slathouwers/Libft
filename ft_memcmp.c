@@ -6,7 +6,7 @@
 /*   By: slathouw <slathouw@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/02 13:59:00 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/05 11:13:21 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/06 15:55:26 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	const unsigned char *p1;
-	const unsigned char *p2;
+	const unsigned char	*p1;
+	const unsigned char	*p2;
 
 	p1 = (const unsigned char *) s1;
 	p2 = (const unsigned char *) s2;

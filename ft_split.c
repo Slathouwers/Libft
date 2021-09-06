@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static int		count_words(char const *str, char sep)
+static int	count_words(char const *str, char sep)
 {
 	int	count;
 
@@ -33,16 +33,16 @@ static int		count_words(char const *str, char sep)
 
 static char	*get_word(char const *str, char sep)
 {
-	char *word;
-	int	i;
+	char	*word;
+	int		i;
 
 	i = 0;
 	while (str[i] && str[i] != sep)
 		i++;
 	word = (char *)malloc(sizeof(char) * (i + 1));
-    i = 0;
+	i = 0;
 	if (!word)
-        return (NULL);
+		return (NULL);
 	while (str[i] && str[i] != sep)
 	{
 		word[i] = str[i];
@@ -54,13 +54,13 @@ static char	*get_word(char const *str, char sep)
 
 char	**ft_split(char const *s, char c)
 {
-    char    **arr;
-    size_t    i;
-	
+	char	**arr;
+	size_t	i;
+
 	i = 0;
-    arr = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
+	arr = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
 	if (!arr)
-        return (NULL);
+		return (NULL);
 	while (*s)
 	{
 		while (*s && *s == c)

@@ -12,13 +12,13 @@
 
 #include "libft.h"
 
-static int			ft_len(long int nbr)
+static int	ft_len(long int nbr)
 {
 	int		len;
 
-    len = 0;
+	len = 0;
 	if (nbr <= 0)
-        len++;
+		len++;
 	while (nbr)
 	{
 		nbr /= 10;
@@ -31,24 +31,24 @@ static unsigned int	to_un(int n, int *sign)
 {
 	unsigned int	un;
 
-	if(n < 0)
-    {
-        *sign = -1;
-        un = (unsigned int) - n;
-    }
+	if (n < 0)
+	{
+		*sign = -1;
+		un = (unsigned int) - n;
+	}
 	else
 		un = n;
 	return (un);
 }
 
-char		*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	int		len;
-	int		sign;
-	char	*c;
-	unsigned int un;
+	int				len;
+	int				sign;
+	char			*c;
+	unsigned int	un;
 
-    sign = 0;
+	sign = 0;
 	un = to_un(n, &sign);
 	len = ft_len(n);
 	c = (char *)malloc(sizeof(char) * len + 1);
