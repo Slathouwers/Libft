@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: slathouw <slathouw@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 13:39:22 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/01 13:45:14 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/06 09:32:55 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	const char	*end;
-
+	if(!s)
+		return (NULL);
 	end = s;
 	while (*end)
 		end++;
