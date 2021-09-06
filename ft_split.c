@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int		count_words(char *str, char sep)
+static int		count_words(char const *str, char sep)
 {
 	int	count;
 
@@ -31,7 +31,7 @@ int		count_words(char *str, char sep)
 	return (count);
 }
 
-char	*get_word(char *str, char sep)
+static char	*get_word(char const *str, char sep)
 {
 	char *word;
 	int	i;
@@ -40,9 +40,9 @@ char	*get_word(char *str, char sep)
 	while (str[i] && str[i] != sep)
 		i++;
 	word = (char *)malloc(sizeof(char) * (i + 1));
-    if (!word)
+    i = 0;
+	if (!word)
         return (NULL);
-	i = 0;
 	while (str[i] && str[i] != sep)
 	{
 		word[i] = str[i];
@@ -52,26 +52,25 @@ char	*get_word(char *str, char sep)
 	return (word);
 }
 
-char	**ft_split(char *str)
+char	**ft_split(char const *s, char c)
 {
     char    **arr;
     size_t    i;
 	
-    arr = (char **)malloc(sizeof(char *) * (count_words(str) + 1));
-    if (!arr)
-        return (NULL);
-    
 	i = 0;
-	while (*str)
+    arr = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
+	if (!arr)
+        return (NULL);
+	while (*s)
 	{
-		while (*str && *str == sep)
-			str++;
-		if (*str && *str != sep)
+		while (*s && *s == c)
+			s++;
+		if (*s && *s != c)
 		{
-			arr[i] = get_word(str, sep);
+			arr[i] = get_word(s, c);
 			i++;
-			while (*str && *str != sep)
-				str++;
+			while (*s && *s != c)
+				s++;
 		}
 	}
 	arr[i] = NULL;
