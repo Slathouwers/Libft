@@ -6,7 +6,7 @@
 #    By: slathouw <slathouw@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/02 11:59:30 by slathouw          #+#    #+#              #
-#    Updated: 2021/09/06 13:24:31 by slathouw         ###   ########.fr        #
+#    Updated: 2021/09/06 13:41:13 by slathouw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,7 @@ bonus :	${OBJS} ${BONUSOBJS}
 			ranlib ${NAME}
 
 clean :
-			rm -f ${OBJS}
+			rm -f ${OBJS} ${BONUSOBJS}
 
 fclean :	clean
 			rm -f ${NAME}
