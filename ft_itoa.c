@@ -27,18 +27,29 @@ static int			ft_len(long int nbr)
 	return (len);
 }
 
+static unsigned int	to_un(int n, int *sign)
+{
+	unsigned int	un;
+
+	if(n < 0)
+    {
+        *sign = -1;
+        un = (unsigned int) - n;
+    }
+	else
+		un = n;
+	return (un);
+}
+
 char		*ft_itoa(int n)
 {
 	int		len;
 	int		sign;
 	char	*c;
+	unsigned int un;
 
     sign = 0;
-    if(n < 0)
-    {
-        sign = -1;
-        n = -n;
-    }
+	un = to_un(n, &sign);
 	len = ft_len(n);
 	c = (char *)malloc(sizeof(char) * len + 1);
 	if (c == NULL)
@@ -47,8 +58,8 @@ char		*ft_itoa(int n)
 	len--;
 	while (len >= 0)
 	{
-		c[len--] = '0' + (n % 10);
-		n /= 10;
+		c[len--] = '0' + (un % 10);
+		un /= 10;
 	}
 	if (sign == -1)
 		c[0] = '-';
