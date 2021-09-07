@@ -6,7 +6,7 @@
 /*   By: slathouw <slathouw@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 15:26:50 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/07 10:17:30 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/07 15:09:20 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_atoi(const char *str)
 	int	i;
 	int	num;
 
+	if (!str)
+		return (0);
 	i = 0;
 	sign = 1;
 	num = 0;
