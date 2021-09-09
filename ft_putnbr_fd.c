@@ -14,12 +14,18 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*nbr;
+	unsigned int	un;
 
 	if (fd < 0)
 		return ;
-	nbr = ft_itoa(n);
-	ft_putstr_fd(nbr, fd);
-	if (nbr)
-		free(nbr);
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		un = (unsigned int) -n;
+	}
+	else
+		un = (unsigned int) n;
+	if (un > 9)
+		ft_putnbr_fd(un / 10, fd);
+	ft_putchar_fd((un % 10) + '0', fd);
 }
