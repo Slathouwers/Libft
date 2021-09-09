@@ -17,6 +17,8 @@ static int	count_words(char const *str, char sep)
 	int	count;
 
 	count = 0;
+	if (!str)
+		return (0);
 	while (*str)
 	{
 		while (*str && *str == sep)
@@ -74,7 +76,7 @@ char	**ft_split(char const *s, char c)
 	arr = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
 	if (!arr)
 		return (NULL);
-	while (*s)
+	while (s && *s)
 	{
 		while (*s && *s == c)
 			s++;
