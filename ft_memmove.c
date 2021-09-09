@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memmove.c                                          :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: slathouw <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: slathouw <slathouw@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/02 11:00:13 by slathouw          #+#    #+#             */
-/*   Updated: 2021/09/02 14:49:27 by slathouw         ###   ########.fr       */
+/*   Updated: 2021/09/09 09:09:32 by slathouw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	const char	*src_ptr;
 	char		*dst_ptr;
 
+	if (!dst || !src || !len)
+		return (dst);
 	if (dst < src)
 	{
 		src_ptr = (const char *) src;
